@@ -49,7 +49,7 @@ nav{
   max-width: 350px;
   height: 58px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   gap:80px;
   align-items: center;
 }
@@ -61,7 +61,8 @@ nav a:hover{
   color:#46B1DE;
 }
 .phone{
-  margin-left: 53px;
+  display: flex;
+  margin-left: 3px;
   max-width: 178px;
 }
 .phone a{
@@ -197,7 +198,7 @@ h1 span{
   grid-row-gap: 12px;
   border-radius: 10px;
   padding: 20px;
-  background: #d2e0fb;
+  background: #A1C7D4;
 }
 .boxNumber{
   font-size: 37px;
@@ -641,284 +642,191 @@ h5{
   width: 88%;
   transition: 1.5s;
 }
+.insta span:hover::after{
+  max-width: 50%;
+  transition: 2s;
+}
 .copyright{
   position: absolute;
   color: white;
   right: 174px;
   top: 372px;
 }
-@media (max-width: 1070px) {
-  .content {
-    max-width: 1070px;
-    margin: 0 auto;
-  }
-  nav {
-    width: 250px;
-    column-gap: 30px;
-  }
-}
-@media (max-width:992px) {
-  .first-screen{
-    max-width: 992px;
-  }
-  nav {
-    width: 150px;
-    font-size: 14px;
-  }
-  .content {
-    max-width: 992px;
-    margin: 0 auto;
-  }
-  .upper{
-    max-width: 820px;
-  }
-  .logo img{
-    margin-left: 20px;
-    max-width: 60px;
-    height: 60px;
-  }
-  #Home .logoSpan{
-    font-size: 16px;
-  }
-  #Home{
-    font-size: 24px;
-    max-width: 180px;
-  }
-  .phone a{
-    font-size: 14px;
-    margin-right: 7px;
-  }
-  .language a{
-    font-size: 14px;
-    margin-right: 7px;
-  }
-  .middle h1{
-    font-size: 28px;
-    margin-left: 22px;
-  }
-  .middle p{
-    font-size: 14px;
-    margin-left: 22px;
-  }
-  .blockDirecton {
-    padding-left: 16%;
-    grid-template-rows: repeat(3, 180px);
-    row-gap: 10px;
-  }
-  .middleContent3{
+@media(max-width:820px){
+  .first-screen {
   max-width: 820px;
-  margin-left: 10px;
+  }
+nav {
+  max-width: 150px;
+  font-size: 18px;
+  column-gap: 15px;
+  margin-right: 10px;
 }
-.appointment{
+.content {
+  max-width: 820px;
+  margin: 0 auto;
+}
+ .upper {
+  max-width: 820px;
+  }
+ .logo img {
+ margin-left: 10px;
+ max-width: 60px;
+ height: 60px;
+ }
+ #Home {
+ font-size: 28px;
+ max-width: 200px;
+ }
+ #Home .logoSpan {
+  font-size: 20px;
+ }
+ .phone{
+  max-width: 200px;
+  margin-left: 30px;
+ }
+ .phone a {
+ font-size: 17px;
+ }
+
+.language a {
+font-size: 17px;
+ margin-right: 5px;
+ }
+.middle h1 {
+  font-size: 32px;
+  margin-left: 19px;
+}
+.middle p {
+  font-size: 18px;
+  margin-left: 19px;
+}
+.woman {
+  max-width: 550px;
+  top: 118px;
+  left: 370px;
+}
+.blockDirecton {
+ margin-left: 28%;
+ grid-template-rows: repeat(3, 190px);
+ row-gap: 5px;
+ }
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  }
+.middleContent3 {
+ max-width: 820px;
+ margin-left: 10px;
+ }
+ .appointment {
   max-width: 720px;
-  margin-left: 50px; 
-  height: 240px;
-} 
-.appointment2{
-  max-width: 690px;
-  margin: 10px;
-  height: 220px;
-}
-.middleh4{
- font-size: 20px;
- margin-top: 19px;
- margin-bottom: 10px;
-}
-.middleh4info {
-  margin-bottom: 30px;
-  font-size: 14px;
-}
+  margin-left: 50px;
+  height: 250px;
+ }
+ .appointment2{
+ max-width: 690px;
+ margin: 10px;
+ height: 230px;
+ } 
 .inputinfo {
-   margin-left: 50px;
+  max-width: 690px;
+  margin-left: 20px;
 }
 .inputName {
-  max-width: 173px;
-  height: 50px;
+  max-width: 200px;
   margin-right: 20px;
 }
 .inputphone {
-  max-width: 173px;
-  height: 50px;
+  max-width: 200px;
+  margin-right: -40px;
 }
 .inputbutton {
-  max-width: 173px;
-  margin-left: 20px;
-  height: 50px;
+  max-width: 200px;
 }
-.sign {
-  font-size: 14px;
-} 
-  .middleContentimg {
-    flex-direction: column;
-    margin-left: 22%;
-    max-width: 450px;
-  }
-  .middleContentimg img {
-    margin-bottom: 15px;
-  }
-  .footercontent {
-    max-width: 892px;
-    padding-left: 5px;
-  }
-  .textlogo {
-    white-space: pre-wrap;
-  }
-  .textlogoDent {
-    padding-left: 120px;
-    padding-top: 14px;
-  }
-  .table{
-    font-size: 21px;
-    margin-right: 120px;
-  }
-  .tableP{
-   margin-right: 120px;
-  }
-  .tableboxes{
-    margin-right: 120px;
-  }
- .box {
-   display: flex;
-   flex-direction: column;
-   width: 45%;
-  }
- .Provided_service {
-   max-width: 820px;
-   margin: 0 auto;
-   text-align: center;
-  }
+ .sign {
+   font-size: 17px;
+ }
+ .middleContentimg {
+ flex-direction: column;
+ margin-left: 10%;
+  max-width: 620px;
+}
+.middleContentimg img {
+  margin-bottom: 15px;
+}
+.footercontent {
+  max-width: 820px;
+  padding-left: 10px;
+}
+.Provided_service {
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+}
 .h3_service {
- font-size: 22px;
- margin-bottom: 10px;
- margin-right: 120px;
+  margin-bottom: 0px;
 }
-.service_class_img{
- display: none;
+.service_class_img {
+  display: none;
 }
 .WhatService {
   display: flex;
   flex-direction: column;
-  margin-left: 90px;
+  margin: 0 auto;
   margin-bottom: 310px;
   position: relative;
 }
 .param {
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
   margin-top: 5px;
 }
 .param1 {
-  margin-top: 5px;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
+  white-space: normal;
+  max-width: 680px;
 }
 .servicesinfo1 {
   text-align: center;
-  padding-right: 40px;
-  margin-left: 75px;
-  white-space: normal;
-  max-width: 400px;
+  margin-left: 80px;
+  max-width: 680px;
 }
 .servicesinfo2 {
-  margin-left: 75px;
-  max-width: 350px;
+  margin-left: 80px;
+  max-width: 680px;
 }
 .servicesinfo3 {
   text-align: center;
-  margin-right: 0px;
-  max-width: 350px;
-  margin-left: 75px;
+  max-width: 680px;
+  margin-left: 130px;
 }
 .servicesinfo4 {
   margin-left: 80px;
-  max-width: 350px;
+  max-width: 680px;
 }
 .servicesinfo5 {
   text-align: center;
-  max-width: 350px;
+  max-width: 680px;
   margin-left: 80px;
-  white-space: normal;
 }
 .servicesinfo6 {
-  max-width: 350px;
+  max-width: 680px;
   margin-left: 80px;
   padding-right: 0px;
 }
 .icon_attention {
   margin-left: 186px;
   margin-right: 0px;
-  max-width: 65px;
+  max-width: 85px;
 }
 .action {
-  font-size: 14px;
   margin-top: 49px;
-  max-width: 210px;
+  max-width: 780px;
 }
-}
-@media(max-width:820px){
-.middleContent3 {
-    max-width: 700px;
-  }
-  .appointment {
-    margin-left: 90px;
-    height: 250px;
-  }
-  .appointment2{
-  margin: 10px; 
-  height: 230px;
-} 
-.inputinfo {
-   margin-left: 10px;
-}
-.inputName {
-  margin-right: 0px;
-  padding-left: 51px;
-}
-.inputphone {
- margin-left: 5px;
- margin-right: -5px;
-}
-.inputbutton {
- margin-right: 5px;
-}
-  .middleContentimg {
-    margin-left: 26%;
-  }
-  .footercontent {
-    max-width: 820px;
-    padding-left: 5px;
-  }
-  .table {
-    margin-top: -10px;
- margin-left: 130px;
-  }
-  .tableP{
-    margin-left: 130px;
-  }
-  .box {
-   margin-left: 250px;
-  }
-  .WhatService {
-    margin-top: 0px;
-    margin-left: 160px;
-  }
-  .h3_service{
-    margin-left: 125px;
-  }
-  .icon_attention {
-    margin-left: 270px;
-    max-width: 65px;
-  }
-  .woman{
-    max-width: 450px;
-    top: 215px;
-    left: 370px;
-  }
-  .blockDirecton{
-    margin-top: 120px;
-    margin-right: 10px;
-  }
-.links{
+.links {
   right: 90px;
 }
 .copyright {
@@ -927,8 +835,7 @@ h5{
 }
 @media(max-width:480px) {
   .first-screen{
-    max-width: 410px;
-    height: 550px;
+    max-width: 480px;
   }
   .lower {
     display: none;
@@ -940,136 +847,142 @@ h5{
     display: none;
   }
   .middleContentimg{
-    max-width: 480px;
+    max-width: 430px;
     margin-bottom: 100px;
-    margin-right: 100px;
+    margin: 0 auto;
   }
   .emptyIcons{
     display: none;
   }
   .upper{
-    max-width:410px;
+    max-width:440px;
     margin-bottom: -46px;
   }
   .logo {
-    margin-left: 10px;
+    margin-left: 0px;
   }
   .logo img{
-    width: 33px;
-    height: 34px;
+    width: 43px;
+    height: 44px;
   }
   .logo #Home{
-    font-size: 16px;
-    width: 129px;
+    font-size: 18px;
+    width: 135px;
   }
   #Home .logoSpan{
-    font-size: 11px;
+    font-size: 13px;
   }
   .phone{
-    width: 137px;
-    margin-right: 25px;
-    margin-top: -35px;
+    width: 167px;
   }
   .phone img{
     width: 11px;
   }
   .phone a{
-    font-size: 12px;
+    font-size: 13px;
+  }
+  .middle{
+    margin-bottom: 350px;
   }
   .middle h1{
-   max-width: 310px;
-   font-size: 22px;
-   padding-left: 45px;
+   max-width: 430px;
+   font-size: 24px;
    line-height: 28px;
    text-align: center;
   }
   .middle p{
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 16.8px;
-    width: 270px;
-    margin-left: 69px;
+    max-width: 380px;
+    margin-left: 35px;
     margin-top: 5px;
     margin-bottom: 20px;
   }
   .buttonCall{
-    font-size: 14px;
-    padding: 7.5px 35px;
+    font-size: 16px;
+    padding: 10.5px 47px;
     margin-left: 30px;
   }
   .buttonServices{
-    font-size: 14px;
-    padding: 7.5px 22.5px;
-    margin-right: 30px;
+    font-size: 16px;
+    padding: 10.5px 30px;
+    margin-right: 70px;
   }
   .woman{
-    width: 208px;
-    top: 340px; 
-    left: 83px;
+    width: 308px;
+    top: 355px; 
+    left: 70px;
+
   }
   .table{
-    font-size: 20px;
-    margin-top: 230px;
+    font-size: 22px;
+    margin-right: 40px;
   }
   .tableP{
-    margin-left: 70px;
-    width: 280px;
+    width: 380px;
     font-size: 14px;
+    margin-right: 30px;
   }
   .box{
-   width: 100%;
-   margin-left: 65px;
+   width: 90%;
    margin-bottom: 0px;
+   margin-right: 46px;
     }
  .boxText{
-  font-size: 12px;
+  font-size: 14px;
  }
  .Provided_service{
   padding-top: 40px;
  }
 .h3_service {
-  font-size: 20px;
+  font-size: 22px;
+  margin-bottom: 50px;
 }
 .WhatService {
-  max-width: 380px;
-  margin-left: 20px;
+  max-width: 460px;
+  margin-left: 15px;
   margin-top: -20px;
-  margin-bottom: 250px;
+  margin-bottom: 350px;
 }
 .Services_title {
   font-size: 16px;
 }
 .servicesinfo1 {
-  padding-right: 0px;
-  margin-left: 5px;
+  margin-right: 10px;
+  margin-left: 0px;
 }
 .servicesinfo2 {
-  margin-left: 5px;
+  margin-left: 3px;
+  margin-top: -15px;
 }
 .servicesinfo3 {
-  margin-left: 5px;
+  margin-left: 0px;
+  margin-right: 12px;
 }
 .servicesinfo4 {
-  margin-left: 5px;
+  margin-left: 3px;
 }
 .servicesinfo5 {
-  margin-left: 10px;
+  margin-left: 3px;
 }
 .servicesinfo6 {
-  margin-left: 10px;
+  margin-left: 3px;
+  margin-top: -15px;
 }
 .icon_attention {
   margin-left: 50px;
   margin-right: 3px;
 }
 .appointment {
-  max-width: 375px;
+  max-width: 460px;
   margin-left: 5px;
 }
 .inputName {
-max-width: 130px;
+max-width: 120px;
 height: 40px;
-margin-right: 30px;
+margin-right: 10px;
+margin-left: 5px;
 background-image: none;
 padding: 10px;
 }
@@ -1078,19 +991,20 @@ padding: 10px;
 }
 .inputphone {
   background-image: none;
-  max-width: 130px;
+  max-width: 120px;
   height: 40px;
   padding: 10px;
 }
 .inputbutton {
-  max-width: 130px;
+  max-width: 120px;
   height: 40px;
-  margin-top: 10px;
-  margin-right: 29px;
-  padding: 10px 30px;
+  margin-top: 0px;
+  /* margin-left: 10px; */
+  margin-right: 5px;
+  padding: 8px 30px;
 }
 .footerBackground {
-  width: 410px;
+  max-width: 480px;
   height: 568px;
   background: linear-gradient(40deg, #0680AA 18.16%, #A1C7D4 98.06%);
 }
@@ -1106,7 +1020,7 @@ padding: 10px;
 }
 .textlogoDent {
   font-size: 19px;
-  margin-left: -60px;
+  margin-left: 60px;
   padding-top:0px ;
 }
 .footer_a{
@@ -1151,7 +1065,7 @@ h5 {
   font-size: 17px;
 }
 .copyright {
-  right: 44px;
+  right: 48px;
   top: 516px;
   font-size: 14px;
 }
